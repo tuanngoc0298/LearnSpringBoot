@@ -1,4 +1,4 @@
-package com.example.mycoolapp.exception.response;
+package com.example.mycoolapp.exception.student.response;
 
 public class StudentErrorResponse {
     private int status;

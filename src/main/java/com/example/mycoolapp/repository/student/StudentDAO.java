@@ -1,4 +1,4 @@
-package com.example.mycoolapp.repository;
+package com.example.mycoolapp.repository.student;
 
 import com.example.mycoolapp.entity.Student;
 

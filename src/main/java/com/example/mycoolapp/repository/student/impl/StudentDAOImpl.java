@@ -1,7 +1,7 @@
-package com.example.mycoolapp.repository.impl;
+package com.example.mycoolapp.repository.student.impl;
 
 import com.example.mycoolapp.entity.Student;
-import com.example.mycoolapp.repository.StudentDAO;
+import com.example.mycoolapp.repository.student.StudentDAO;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;

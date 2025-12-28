@@ -1,7 +1,7 @@
 package com.example.mycoolapp;
 
 import com.example.mycoolapp.entity.Student;
-import com.example.mycoolapp.repository.StudentDAO;
+import com.example.mycoolapp.repository.student.StudentDAO;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

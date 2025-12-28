@@ -1,6 +1,6 @@
-package com.example.mycoolapp.service.impl;
+package com.example.mycoolapp.service.coach.impl;
 
-import com.example.mycoolapp.service.CoachService;
+import com.example.mycoolapp.service.coach.CoachService;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 

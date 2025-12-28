@@ -1,9 +1,9 @@
 package com.example.mycoolapp.controller;
 
 import com.example.mycoolapp.entity.Student;
-import com.example.mycoolapp.exception.StudentNotFoundException;
-import com.example.mycoolapp.exception.response.StudentErrorResponse;
-import com.example.mycoolapp.repository.StudentDAO;
+import com.example.mycoolapp.exception.student.StudentNotFoundException;
+import com.example.mycoolapp.exception.student.response.StudentErrorResponse;
+import com.example.mycoolapp.repository.student.StudentDAO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

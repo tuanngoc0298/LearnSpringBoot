@@ -1,4 +1,4 @@
-package com.example.mycoolapp.exception;
+package com.example.mycoolapp.exception.student;
 
 public class StudentNotFoundException extends RuntimeException {
     public StudentNotFoundException(String message) {

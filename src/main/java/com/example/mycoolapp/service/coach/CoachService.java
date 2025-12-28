@@ -1,4 +1,4 @@
-package com.example.mycoolapp.service;
+package com.example.mycoolapp.service.coach;
 
 
 public interface CoachService {
