@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World - Input Form</title>
+
+    <link rel="stylesheet" th:href="@{/css/demo.css}">
+</head>
+<body>
+<!--    <p th:text="'Time on the server is ' + ${theDate}" class="funny"/>-->
+    <form th:action="@{/processStudentForm}" th:object="${student}" method="POST">
+        <h3>First name: <input type="text" th:field="*{firstName}"/></h3>
+        <h3>Last name: <input type="text" th:field="*{lastName}"/></h3>
+
+        <select th:field="*{country}">
+            <option th:each="country : ${countries}" th:value="${country}" th:text="${country}"/>
+        </select>
+        <br>
+        <input type="radio" th:field="*{language}" th:each="language : ${languages}" th:value="${language}" th:text="${language}"/>
+        <br>
+        <input type="checkbox" th:field="*{favSystems}" th:each="system: ${systems}" th:value="${system}" th:text="${system}"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

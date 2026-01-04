@@ -31,14 +31,10 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     }
 
     @Override
-    public void save(Employee employee) {
-        this.entityManager.persist(employee);
-    }
-
-    @Override
-    public Employee update(Employee employee) {
+    public Employee save(Employee employee) {
         return this.entityManager.merge(employee);
     }
+
 
     @Override
     public void deleteById(int id) {
