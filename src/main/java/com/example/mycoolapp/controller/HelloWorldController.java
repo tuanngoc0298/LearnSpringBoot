@@ -46,19 +46,19 @@ public class HelloWorldController {
     //}
 
     // Cach 2: Use @RequestParam
-    @PostMapping("/processForm")
-    public String processForm(@RequestParam("studentName") String theName, Model model) {
-        // Convert the data to all caps
-        theName = theName.toUpperCase();
-
-        // Create the message
-        String result = "WTF! " + theName;
-
-        // Add message to the model
-        model.addAttribute("message", result);
-
-        return "helloworld";
-    }
+    //@PostMapping("/processForm")
+    //public String processForm(@RequestParam("studentName") String theName, Model model) {
+    //    // Convert the data to all caps
+    //    theName = theName.toUpperCase();
+    //
+    //    // Create the message
+    //    String result = "WTF! " + theName;
+    //
+    //    // Add message to the model
+    //    model.addAttribute("message", result);
+    //
+    //    return "helloworld";
+    //}
 
     @GetMapping("/showStudentForm")
     public String showStudentForm(Model theModel) {
