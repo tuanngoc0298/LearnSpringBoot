@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class CommonExceptionHandler {
     // add another exception handler to catch any exception (catch all)
-    @ExceptionHandler
-    public ResponseEntity<StudentErrorResponse> handleException(Exception exc) {
-        StudentErrorResponse error = new StudentErrorResponse();
-        error.setStatus(HttpStatus.BAD_REQUEST.value());
-        error.setMessage(exc.getMessage());
-        error.setTimeStamp(System.currentTimeMillis());
-
-        // Return ResponseEntity
-        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
-    }
+    //@ExceptionHandler
+    //public ResponseEntity<StudentErrorResponse> handleException(Exception exc) {
+    //    StudentErrorResponse error = new StudentErrorResponse();
+    //    error.setStatus(HttpStatus.BAD_REQUEST.value());
+    //    error.setMessage(exc.getMessage());
+    //    error.setTimeStamp(System.currentTimeMillis());
+    //
+    //    // Return ResponseEntity
+    //    return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    //}
 
 }
