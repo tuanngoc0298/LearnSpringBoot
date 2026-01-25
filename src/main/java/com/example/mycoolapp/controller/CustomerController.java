@@ -23,7 +23,7 @@ public class CustomerController {
         binder.registerCustomEditor(String.class, stringTrimmer);
     }
 
-    @GetMapping("/")
+    @GetMapping("/showForm")
     public String showForm(Model model) {
         Customer customer = new Customer();
         model.addAttribute("customer", customer);

@@ -21,10 +21,10 @@ public class HelloWorldController {
     private List<String> systems;
 
     // Show Form
-    @GetMapping("/showForm")
-    public String showForm() {
-        return "helloworld-form";
-    }
+    //@GetMapping("/showForm")
+    //public String showForm() {
+    //    return "helloworld-form";
+    //}
 
     // Cach 1: Use HttpServletRequest
     // Process the HTML Form

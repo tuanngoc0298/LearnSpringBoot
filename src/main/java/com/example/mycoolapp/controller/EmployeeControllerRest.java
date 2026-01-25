@@ -10,11 +10,11 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-public class EmployeeController {
+public class EmployeeControllerRest {
     private JsonMapper jsonMapper;
     private final EmployeeService employeeService;
 
-    public EmployeeController(EmployeeService employeeService, JsonMapper jsonMapper) {
+    public EmployeeControllerRest(EmployeeService employeeService, JsonMapper jsonMapper) {
         this.employeeService = employeeService;
         this.jsonMapper = jsonMapper;
     }

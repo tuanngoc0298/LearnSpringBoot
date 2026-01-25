@@ -28,7 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<Employee> findAll() {
         //return this.employeeDAO.findAll();
-        return this.employeeJPA.findAll();
+        return this.employeeJPA.findAllByOrderByLastNameAsc();
 
     }
 
