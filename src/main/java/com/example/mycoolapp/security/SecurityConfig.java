@@ -77,14 +77,19 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(configurer ->
-                configurer.anyRequest().authenticated()
+                configurer
+                        .requestMatchers("/").hasRole("EMPLOYEE")
+                        .requestMatchers("/leaders/**").hasRole("MANAGER")
+                        .requestMatchers("/systems/**").hasRole("ADMIN")
+                        .anyRequest().authenticated()
             )
-            .formLogin(form ->
-                form
-                    .loginPage("/showLoginPage")
-                    .loginProcessingUrl("/authenticateTheUser")
-                    .permitAll()
-            );
+                .formLogin(form ->
+                    form
+                        .loginPage("/showLoginPage")
+                        .loginProcessingUrl("/authenticateTheUser")
+                        .permitAll()
+                )
+                .logout(logout -> logout.permitAll());
         return http.build();
     }
 }
